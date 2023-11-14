@@ -6,6 +6,8 @@ El desafío es construir esta página de inicio de comercio electrónico y hacer
 - CSS
 - Vue JS - Composition API & Vite
 
+![desktop-preview](https://github.com/Cheosphere/room-homepage-master/assets/112582420/21acc9e0-3337-4e2a-acca-85b0d043ecc1)
+
 # Guía de Estilo
 
 ## Diseño
