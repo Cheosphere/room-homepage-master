@@ -187,7 +187,7 @@ img {
 @media screen and (max-width: 1180px) {
     .hero {
         max-width: 840px;
-        height: fit-content;
+        height: auto;
         flex-direction: column;
     }
     .hero-info {
