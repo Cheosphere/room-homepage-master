@@ -22,7 +22,6 @@ body {
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: 'League Spartan', sans-serif;
   overflow-x: hidden;
 }
