@@ -18,10 +18,10 @@ const menuMobile = () => {
         </figure>
         <nav class="nav" ref="navMenu">
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="javascript:;">home</a></li>
-                <li class="nav-menu-item"><a href="javascript:;">shop</a></li>
-                <li class="nav-menu-item"><a href="javascript:;">about</a></li>
-                <li class="nav-menu-item"><a href="javascript:;">contact</a></li>
+                <li class="nav-menu-item"><a class="hover_link" href="javascript:;">home</a></li>
+                <li class="nav-menu-item"><a class="hover_link" href="javascript:;">shop</a></li>
+                <li class="nav-menu-item"><a class="hover_link" href="javascript:;">about</a></li>
+                <li class="nav-menu-item"><a class="hover_link" href="javascript:;">contact</a></li>
             </ul>
         </nav>
         <span class="icon-hamburger" ref="iconHamburger" @click="menuMobile"></span>
@@ -55,12 +55,27 @@ const menuMobile = () => {
     margin-top: -.2rem;
     margin-right: 2rem;
     list-style: none;
+    position: relative;
 }
 
 a {
     color: var(--white);
     text-decoration: none;
     letter-spacing: -.02rem;
+}
+.hover_link::after {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.3s ease 0s;
+    background-color: var(--white);
+}
+.hover_link:hover::after {
+    transform: scaleX(1);
 }
 
 /* Media Query */
